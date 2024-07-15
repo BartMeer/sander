@@ -1,16 +1,18 @@
+@import "variables";
+
 .titel {
   text-align: center;
   height: 300px;
   line-height: 180px;
-}
-.titel h1 {
-  font-size: 70px;
-  font-weight: 600;
-  font-size: 72px;
-  background: linear-gradient(120deg, #fdfaed, #ebb716);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  h1 {
+    font-size: 70px;
+    font-weight: 600;
+    font-size: 72px;
+    background: linear-gradient(120deg, $background, $primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .image {
@@ -35,14 +37,15 @@
   align-items: stretch;
   align-content: stretch;
   margin-bottom: 100px;
+
+  p {
+    width: 35%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+  }
+  img {
+    width: 35%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
 }
-.horizontal p {
-  width: 35%;
-  padding-right: 2.5%;
-  padding-left: 2.5%;
-}
-.horizontal img {
-  width: 35%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-}/*# sourceMappingURL=index.css.map */
