@@ -73,6 +73,9 @@ body, html {
 
 .row1 {
   // background-color: red;
+  .horizontal {
+    background-color: $background;
+  }
 }
 
 .row2 {
@@ -100,4 +103,59 @@ body, html {
   color: $background;
   margin-left: -20px;
   margin-right: -20px;
+}
+
+.mobile-body {
+  display: block;
+}
+
+
+// mobile styling
+@media (max-width: 900px) {
+  body, html {
+    overflow: visible;
+  }
+
+  .scroll-container {
+    display: none;
+  }
+  .mobile-body {
+    display: block;
+  }
+
+  .row3 {
+    .horizontal {
+      height: auto;
+    }
+  }
+
+  .row1 {
+    .header {
+      height: 20vh;
+    }
+    .horizontal {
+      height: 80vh;
+    }
+  }
+  .horizontal {
+    all: unset;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .horizontal p {
+    all: unset;
+    padding: 20px;
+    width: 80vw;
+    margin: auto;
+  }
+  
+  .horizontal img {
+    all: unset;
+    padding: 20px;
+    width: 80vw;
+    margin: auto;
+  }
+
+
 }
